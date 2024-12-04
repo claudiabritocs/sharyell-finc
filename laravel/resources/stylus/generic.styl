@@ -1,0 +1,394 @@
+normalize();
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: black;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: black;
+    color: #fff;
+}
+
+.logo_geral
+    height: 74px
+    width: 74px
+    img
+        width: 100%
+        height: 100%
+
+.alert-success
+    position: fixed;
+    left: 50%;
+    width: 80%
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background-color: green;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 190
+    text-align: center
+
+.alert-danger
+    position: fixed;
+    left: 50%;
+    width: 80%
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 190
+    text-align: center
+
+
+//INPUTS E UPLOAD FILE
+.input_text
+    height: 40px
+    border-radius: 8px
+    border: 1px solid $verdeMusgo
+    jakarta 16
+    color: $roxo
+    font-weight: 500
+
+.input_number
+    height: 40px
+    border-radius: 8px
+    border: 1px solid $verdeMusgo
+    color: $roxo
+    font-weight: 500
+
+.select_default
+    height: 40px
+    border-radius: 8px
+    border: 1px solid $verdeMusgo
+    color: $verdeMedio
+    jakarta 16
+
+.date_input
+    width: 150px
+    border: 1px solid $verdeMusgo
+    border-radius: 6px
+    height: 40px
+    jakarta 15
+    color: $verdeMedio
+    font-weight: 500
+
+.form_line
+    margin-bottom: 15px
+
+.select_client
+    width: 100%
+    border: 1px solid $marrom_4
+    border-radius: 6px
+    height: 45px
+    jakarta 15
+    color: $marrom_4
+    font-weight: 500
+    margin-bottom: 10px
+
+.label_default
+    jakarta 16
+    margin: 0
+    color: white
+
+.form_title
+    margin: 0
+    jakarta 19
+    color: $marrom_4
+    font-weight: 600
+    margin-bottom: 25px
+
+
+
+//INSELECIONAVEL
+.unselect
+    user-select: none
+
+
+//BOTOES BTNs
+.btn_search
+    width: 60px
+    height: 45px
+    jakarta 17
+    background-color: $verdeMusgo
+    color: $branco
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 6px
+    cursor pointer
+    transition: all 0.3s
+    user-select: none
+    &:hover
+        transform: scale(1.05)
+        background-color: $verdeMedio
+
+    img
+        height: 35px
+        width: 35px
+
+.btn_clean
+    width: 35px
+    height: 30px
+    jakarta 17
+    background-color: darkred
+    color: $branco
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 6px
+    cursor pointer
+    transition: all 0.3s
+    user-select: none
+    &:hover
+        transform: scale(1.05)
+        background-color: rgb(78, 0, 0)
+
+    img
+        height: 25px
+        width: 25px
+
+.btn_update
+    width: 150px
+    height: 45px
+    jakarta 17
+    background-color: $marrom_3
+    color: $branco
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 6px
+    cursor pointer
+    transition: all 0.3s
+    user-select: none
+    &:hover
+        transform: scale(1.03)
+        background-color: $marrom_4
+
+.adder
+    background-color: $verdeClaro
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    align-content: center
+    width: 25px
+    height: 25px
+    cursor pointer
+    border-radius: 4px
+    transition: all 0.3s
+    user-select: none
+    &:hover
+        transform: scale(1.1)
+        background-color: $verdeMusgo
+
+    img
+        height: 19px
+        width: 19px
+
+.btn_create
+    width: 180px
+    height: 45px
+    jakarta 17
+    background-color: $marrom_2
+    color: $branco
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 6px
+    cursor pointer
+    user-select: none
+    transition: all 0.3s
+    &:hover
+        transform: scale(1.03)
+        background-color: $marrom_4
+
+.btn_create_negativo
+    width: 180px
+    height: 40px
+    jakarta 16
+    font-weight: 600
+    text-transform: uppercase
+    background-color: white
+    color: $verdeMedio
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    margin-top: 20px
+    border-radius: 6px
+    cursor pointer
+    user-select: none
+    transition: all 0.3s
+    @media (max-width: 390px)
+        width: 100%
+        border: 2px solid green
+    &:hover
+        transform: scale(1.03)
+        background-color: $verdeClaro
+        color: white
+
+.btn_edit
+    height: 35px
+    padding: 0 10px
+    jakarta 17
+    background-color: darkgrey
+    color: $branco
+    display: flex
+    justify-content: center
+    align-items: center
+    border-top-left-radius: 6px
+    border-bottom-left-radius: 6px
+    cursor pointer
+    user-select: none
+    transition: all 0.3s
+    &:hover
+        transform: scale(1.03)
+        background-color: $marrom_4
+
+.btn_delete
+    height: 35px
+    padding: 0 10px
+    jakarta 17
+    background-color: darkred
+    color: $branco
+    display: flex
+    justify-content: center
+    align-items: center
+    border-top-right-radius: 6px
+    border-bottom-right-radius: 6px
+    cursor pointer
+    user-select: none
+    transition: all 0.3s
+    &:hover
+        transform: scale(1.03)
+        background-color: #610000
+
+.btn_add_spent
+    height: 45px
+    padding: 0 10px
+    jakarta 17
+    background-color: darkred
+    color: $branco
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 6px
+    cursor pointer
+    user-select: none
+    transition: all 0.3s
+    column-gap: 5px
+    &:hover
+        transform: scale(1.05)
+        background-color: #610000
+
+    img
+        height: 20px
+        width: 20px
+
+.btn_add_earn
+    height: 45px
+    padding: 0 10px
+    jakarta 17
+    background-color: $verdeClaro
+    color: $branco
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 6px
+    cursor pointer
+    user-select: none
+    transition: all 0.3s
+    column-gap: 5px
+    &:hover
+        transform: scale(1.05)
+        background-color: $verdeMedio
+
+    img
+        height: 20px
+        width: 20px
+
+//BOTAO VOLTAR
+.before_btn
+    display: block
+    width: min-content
+    height: fit-content
+
+.btn_back
+    width: 80px
+    height: 35px
+    jakarta 16
+    background-color: darkgrey
+    color: $branco
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 6px
+    cursor pointer
+    user-select: none
+    transition: all 0.3s
+    &:hover
+        background-color: grey
+
+.cancel
+    height: 40px
+    padding: 0 10px
+    jakarta 17
+    background-color: darkgrey
+    color: $branco
+    display: flex
+    justify-content: center
+    align-items: center
+    border-top-left-radius: 6px
+    border-bottom-left-radius: 6px
+    cursor pointer
+    user-select: none
+    transition: all 0.3s
+    &:hover
+        transform: scale(1.03)
+        background-color: $marrom_4
+
+
+//SEPARADOR CLIENTE PADRAO
+.separator_client
+    width: 100%
+    height: 2px
+    background-color: $marrom_4
+    margin: 20px 0
+
+
+//POP UP GENERICO
+.pop_up_bg
+    position fixed
+    z-index: 101
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0,0.3)
+
+.popup
+    position: fixed
+    z-index: 102
+    width: 80%
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+    margin-left: auto
+    margin-right: auto
+    margin-top: 95px
+    background-color: white
+    border-radius: 10px
+    padding: 25px 25px
+
+    p
+        jakarta 16
+        margin-bottom: 15px
+        text-align: center
+

@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+$vermelhoError = #E02227;
+$verdeSuccess = #2caf2c;
+$preto = #000;
+$branco = #FFFFFF;
+$branco_2 = #F3F5F5;
+$verdeMusgo = #7A9A90;
+$verdeClaro = #4FBB8B;
+$verdeMedio = #61958E;
+$roxo = #211E26;
+$input = #f3f3f3;
+
+
+lato($size, $weight = normal) {
+    font-family: 'Lato', sans-serif;
+    font-size: $size px;
+    font-weight: 400;
+
+    if ($weight == thin) {
+        font-weight: 100;
+    }
+
+    if ($weight == light) {
+        font-weight: 300;
+    }
+}
+
+jakarta($size, $weight = normal) {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: $size px;
+    font-weight: 400;
+
+    if ($weight == thin) {
+        font-weight: 100;
+    }
+
+    if ($weight == light) {
+        font-weight: 300;
+    }
+}
+
